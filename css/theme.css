@@ -1,0 +1,60 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #333;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark {
+  --bg-color: #333;
+  --text-color: #fff;
+}
+
+.d-none{
+    display: none;
+}
+
+#theme-switcher {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+
+body.dark #theme-switcher {
+  color: #fff;
+}
+
+
+#light,#dark{
+    font-size: 16px;
+    padding: 3%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#light{
+    border: solid 4px black;
+    background: white;
+    color: black;
+    display: none;
+}
+
+
+#dark{
+    border: solid 4px black;
+    background: black;
+    color: #fff;
+}
